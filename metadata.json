@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/"
+    },
+    "@type": "dcat:Dataset",
+    "dct:title": "Assessment of SPPB and VIVIFRAIL with an inertial motion capture system",
+    "dct:creator": [
+        {
+            "foaf:name": "Antonio Cobos"
+        },
+        {
+            "foaf:name": "Fatima Alvarado"
+        }
+    ],
+    "dct:issued": "2025-02-14",
+    "dct:spatial": "Madrid, Spain",
+    "dct:identifier": "https://doi.org/10.1234/motiva-dataset",
+    "dcat:distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "dcat:mediaType": "text/csv",
+            "dcat:downloadURL": "https://raw.githubusercontent.com/Aldair0101/MOTIVA/main/Test%20Time.csv"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "dcat:mediaType": "application/pdf",
+            "dcat:downloadURL": "https://raw.githubusercontent.com/Aldair0101/MOTIVA/main/Sensor_Details.pdf"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "dcat:mediaType": "text/plain",
+            "dcat:downloadURL": "https://raw.githubusercontent.com/Aldair0101/MOTIVA/main/README.txt"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "dcat:mediaType": "application/xml",
+            "dcat:downloadURL": "https://raw.githubusercontent.com/Aldair0101/MOTIVA/main/metadata.xml"
+        }
+    ]
+}
