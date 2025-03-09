@@ -10,64 +10,59 @@
     </rspStmt>
     <prodDate>2025-02-14</prodDate>
     <geogCover>Madrid, Spain</geogCover>
+    <IDNo agency="DOI">10.1234/motiva-dataset</IDNo>
     <dataAccs>
       <useStmt>
         <license>Creative Commons Zero (CC0)</license>
         <licenseURI>https://creativecommons.org/publicdomain/zero/1.0/</licenseURI>
       </useStmt>
+      <access>
+        <accsURI>https://raw.githubusercontent.com/Aldair0101/MOTIVA/main/dataset.csv</accsURI>
+      </access>
     </dataAccs>
   </stdyDscr>
   <variableMetadata>
     <var ID="Timestamp">
       <labl>Timestamp</labl>
       <txt>Time stamp in seconds from the start of data collection.</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="Ts_milliseconds">
       <labl>Ts_milliseconds</labl>
       <txt>Time stamp in milliseconds for higher precision.</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="acc_x">
       <labl>acc_x</labl>
       <txt>Acceleration along the X-axis in m/s².</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="acc_y">
       <labl>acc_y</labl>
       <txt>Acceleration along the Y-axis in m/s².</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="acc_z">
       <labl>acc_z</labl>
       <txt>Acceleration along the Z-axis in m/s².</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="gyro_x">
       <labl>gyro_x</labl>
       <txt>Angular velocity along the X-axis in rad/s.</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="gyro_y">
       <labl>gyro_y</labl>
       <txt>Angular velocity along the Y-axis in rad/s.</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
     <var ID="gyro_z">
       <labl>gyro_z</labl>
       <txt>Angular velocity along the Z-axis in rad/s.</txt>
+      <Concept vocab="SNOMED">http://purl.bioontology.org/ontology/SNOMEDCT/386053000</Concept>
     </var>
   </variableMetadata>
-  <eventMetadata>
-    <Description>Events are recorded in files located at: /content/drive/MyDrive/DATASET/RAW_Data/app/preprocesados-reconocimiento</Description>
-    <eventVariables>
-      <var ID="evID">
-        <labl>evID</labl>
-        <txt>Identifies the type of event</txt>
-      </var>
-      <var ID="phsID">
-        <labl>phsID</labl>
-        <txt>Indicates the event phase</txt>
-      </var>
-      <var ID="ts_unix">
-        <labl>ts_unix</labl>
-        <txt>UNIX timestamp in milliseconds</txt>
-      </var>
-    </eventVariables>
-  </eventMetadata>
   <sensorMetadata>
     <Description>Sensors used in the experiments and their locations.</Description>
     <sensor ID="1">WAIST</sensor>
@@ -87,25 +82,10 @@
     <exercise ID="3">SPPB_TANDEM_FEET</exercise>
     <exercise ID="4">SPPB_3M_WALK</exercise>
     <exercise ID="5">SPPB_CHAIR_STANDS</exercise>
-    <exercise ID="6">WALKING_ON_LINE</exercise>
-    <exercise ID="7">HEEL_TO_TOE_WALK</exercise>
-    <exercise ID="8">OBSTACLE_COURSE</exercise>
-    <exercise ID="9">WALKING_IN_FIGURE_8</exercise>
-    <exercise ID="10">WALKING_WITH_BALL</exercise>
-    <exercise ID="11">STAIRS_UP_DOWN</exercise>
-    <exercise ID="12">LIFTING_BOTTLE</exercise>
-    <exercise ID="13">SQUEEZING_BALL</exercise>
-    <exercise ID="14">WRINGING_TOWEL</exercise>
-    <exercise ID="15">LEG_EXTENSION_WITH_ANKLE_WEIGHT</exercise>
-    <exercise ID="16">ASSISTED_CHAIR_RISE</exercise>
-    <exercise ID="17">SIMULATED_SQUAT</exercise>
-    <exercise ID="18">UNASSISTED_CHAIR_RISE</exercise>
-    <exercise ID="19">LEG_STRETCHING</exercise>
-    <exercise ID="20">ARM_STRETCHING</exercise>
-    <exercise ID="21">ARM_STRETCHING_WHILE_SEATED</exercise>
   </exerciseMetadata>
   <datasetContents>
     <Description>List of files included in the MOTIVA Dataset and their descriptions.</Description>
+    <IDNo agency="URL">https://raw.githubusercontent.com/Aldair0101/MOTIVA/main/dataset.csv</IDNo>
     <file name="Test Time.csv" type="CSV">
       <Description>File containing timing information for the tests.</Description>
     </file>
@@ -125,4 +105,7 @@
       <Description>Directory containing raw sensor data files.</Description>
     </file>
   </datasetContents>
+  <provenance>
+    <Source>Generated from inertial sensor dataset collected in MOTIVA project</Source>
+  </provenance>
 </codeBook>
